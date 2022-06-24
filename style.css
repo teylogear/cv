@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+    color: #010001;
+}
+
+ul{list-style: none; padding: 0;}
+
+.blue{color: #76a4ff;}
+.tx1{font-weight: 300;}
+.tx2{font-weight: 500;}
+.tx3{font-size: larger;}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #b9e0fe;    
+    display: grid;
+    place-items: center;
+}
+
+.container{
+    max-width: 600px;
+    background-color: #fff;
+    padding: 40px;
+    margin: 40px 0;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.header h1, .header p{margin: 0;}
+
+.header{position: relative;}
+
+.header::before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 80px;
+    background-color: #78a5ff;
+    right: -40px;
+}
+
+h1{font-size: xx-large;}
+
+main{
+    display: flex;
+    margin-top: 20px;
+}
+
+aside{
+    min-width: 42%;
+}
+
+.info section,
+.presentation section{
+    margin-bottom: 20px;
+}
+
+.info section:last-child,
+.presentation section:last-child{
+    margin-bottom: 0px;
+}
+
+.info section p,
+.presentation section p{
+    margin: 0;
+    font-size: small;
+}
+
+.education p, .pb{padding-bottom: 5px;}
+
+.contact li{
+    display: flex;
+    gap: 5px;
+    padding-bottom: 5px;
+}
